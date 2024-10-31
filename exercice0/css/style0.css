@@ -1,0 +1,85 @@
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+
+
+
+#conteneur{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+.cellule {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #ccc;   
+}
+
+
+.cellule:nth-child(odd) {
+    background-color: red; 
+}
+
+.cellule:nth-child(even) {
+    background-color: green; 
+}
+
+#conteneur2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr; 
+    grid-template-rows: repeat(3, 100px); 
+    width:300px;
+}
+
+.cellule2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+}
+
+.cellule2:nth-child(odd) {
+    background-color: red;
+}
+
+.cellule2:nth-child(even) {
+    background-color: green;
+}
+
+#conteneur3 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr; 
+    grid-template-rows: 2fr 1fr 1fr; 
+    width:300px;
+    height: 550px;
+    gap: 2px;
+}
+    
+
+.cellule3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    
+}
+
+.cellule3:nth-child(odd) {
+    background-color: red; 
+}
+
+.cellule3:nth-child(even) {
+    background-color: green; 
+}
